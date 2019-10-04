@@ -1,13 +1,13 @@
-import Snake from "./main.js";
+import Game from "./main/index.js";
 
 !function () {
   window.addEventListener("load", function () {
-    const snake = new Snake({
+    const game = new Game({
       width: 600,
       height: 600,
       cellSize: 60
     });
 
-    snake.render(document.body);
+    game.render(document.body);
   });
 }();
